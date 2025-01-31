@@ -35,7 +35,7 @@
                     colors: {
                         clifford: '#da373d',
                         'bike-primary': '#E76F51',
-                        'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+                        'primary-bg': '#EFEBE3',
 
                     }
                 }
@@ -45,9 +45,9 @@
 </head>
 
 <body>
-    <header class="md:container mx-auto sora-fonts">
-        <nav>
-            <div class="navbar bg-base-100">
+    <header class=" sora-fonts bg-gradient-to-t from-gray-200 to-gray-50">
+        <nav class="md:container mx-auto border-solid border-2 border-green-600 md:border-0">
+            <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -73,7 +73,7 @@
                         <li><a>Contact us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-[13px] ">
+                <div class="navbar-end gap-[13px] hidden md:flex ">
                     <a class="btn border-solid border-2 border-green-600 w-[117px]">Login</a>
                     <a class="btn bg-success text-white w-[146px] ">Register</a>
                 </div>
@@ -81,24 +81,67 @@
         </nav>
 
         <!-- banner section -->
-        <section class="mt-[90px]">
+        <section class="mt-[90px] md:container mx-auto">
             <div>
                 <!-- text contant -->
-            <div class="text-center mx-[35px] md:mx-[30px] lg:[386px]">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold ">Freshness <span class="text-green-700">You Can <br>
-                    Count On</span>, Prices You’ll Love!</h2>
+                <div class="text-center mx-[35px] md:mx-[30px] lg:[386px]">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold ">Freshness <span
+                            class="text-green-700">You Can <br>
+                            Count On</span>, Prices You’ll Love!</h2>
                     <br>
-                <p>
-                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
-                    covered every day!
-                </p>
+                    <p>
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples,
+                        we’ve got you
+                        covered every day!
+                    </p>
+                </div>
+                <img class="w-full" src="c2-assets/hero-vegetables.png" alt="">
             </div>
-            <img class="w-full" src="c2-assets/hero-vegetables.png" alt="">
-        </div>
-         </section>
+        </section>
     </header>
-    <main>
-
+    <main >
+        <section class="md:container mx-auto my-40 sora-fonts">
+            <!-- card section -->
+             <h3 class="text-green-500 font-semibold text-2xl mb-12 md:hidden lg:hidden ">Services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+                  <!-- card 1 -->
+                    <div class="card bg-stone-300 w-[424px] shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="c2-assets/service.png"
+                            alt="Shoes"
+                            class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-semibold text-2xl">24/7 Services</h2>
+                          <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                      </div>
+                       <!-- card 2 -->
+                    <div class="card bg-stone-300 w-[424px] shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="c2-assets/delivery.png"
+                            alt="Shoes"
+                            class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-semibold text-2xl">Fast Delivery</h2>
+                          <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                      </div>
+                       <!-- card 3 -->
+                    <div class="card bg-stone-300 w-[424px] shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="c2-assets/healthy.png"
+                            alt="Shoes"
+                            class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-semibold text-2xl">Healthy Products </h2>
+                          <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                      </div>
+            </div>
+        </section>
     </main>
     <footer>
 
